@@ -10,7 +10,7 @@ let currentFrame = 0;
 
 // Function to generate image path
 function getImagePath(index) {
-  return `images/ezgif-3920020ebc895e3f-jpg/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
+  return `images/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
 }
 
 // Preload images
@@ -47,3 +47,4 @@ window.addEventListener("scroll", () => {
 images[0].onload = () => {
   drawImage(0);
 };
+
